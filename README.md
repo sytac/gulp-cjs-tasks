@@ -1,8 +1,9 @@
 [![Build Status](https://travis-ci.org/sytac/gulp-cjs-tasks.svg)](https://travis-ci.org/sytac/gulp-cjs-tasks)
 
 [ ![Codeship Status for sytac/gulp-cjs-tasks](https://codeship.com/projects/67d81b70-c65a-0132-5355-3297e6cd1d5c/status?branch=master)](https://codeship.com/projects/74623)
+# This project is deprecated in lieu of the more evolved [gulp-commonjs-tasks](https://www.npmjs.com/package/gulp-commonjs-tasks). For future projects please use [gulp-commonjs-tasks](https://www.npmjs.com/package/gulp-commonjs-tasks).
 
-# gulp-commonjs-tasks
+# gulp-cjs-tasks
 _Gulp tasks as CommonJS modules_
 
 ## Why?
@@ -18,10 +19,10 @@ Because large gulpfiles are a pain, CommonJS modules are fine for managing gulp 
 - Plays well with [gulp-load-plugins](https://www.npmjs.com/package/gulp-load-plugins).
 
 ### Installation
-Install `gulp` and `gulp-commonjs-tasks` dependencies.
+Install `gulp` and `gulp-cjs-tasks` dependencies.
 
 ```bash
-$ npm install --save-dev gulp gulp-commonjs-tasks
+$ npm install --save-dev gulp gulp-cjs-tasks
 ```
 
 ### Usage
@@ -64,7 +65,7 @@ Create a `gulpfile.js` file and add the following:
 // ./examples/commonjs/gulpfile.js
 
 var gulp = require('gulp');
-var taskLoader = require('gulp-commonjs-tasks/task-loader');
+var taskLoader = require('gulp-cjs-tasks/task-loader');
 
 // load tasks
 var tasksContext = taskLoader.load('./tasks', gulp);
@@ -148,7 +149,7 @@ In our gulp file we'll pass on `defaults` and `moreDefaults`.
 var gulp = require('gulp'),
   path = require('path');
 
-var taskLoader = require('gulp-commonjs-tasks/task-loader');
+var taskLoader = require('gulp-cjs-tasks/task-loader');
 
 var defaults = {
   foo: 'foo!',
@@ -196,7 +197,7 @@ var gulp = require('gulp'),
   path = require('path'),
   $ = require('gulp-load-plugins')();
 
-var taskLoader = require('gulp-commonjs-tasks/task-loader');
+var taskLoader = require('gulp-cjs-tasks/task-loader');
 
 var tasks = taskLoader.load(path.resolve(__dirname, 'tasks'), gulp, $);
 
@@ -250,7 +251,7 @@ Our gulp file
 var gulp = require('gulp'),
   path = require('path');
 
-var taskLoader = require('gulp-commonjs-tasks/task-loader');
+var taskLoader = require('gulp-cjs-tasks/task-loader');
 
 var defaults = require('./defaults.json');
 

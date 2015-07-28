@@ -1,6 +1,6 @@
 {
-  "name": "gulp-commonjs-tasks",
-  "version": "1.0.0",
+  "name": "gulp-cjs-tasks",
+  "version": "0.2.0",
   "description": "Regular commonjs gulp tasks",
   "main": "index.js",
   "files": [
@@ -9,15 +9,14 @@
     "task-loader"
   ],
   "scripts": {
-    "test": "mocha ./test/**/*.spec.js",
-    "postinstall" : "cd node_modules && ln -s ./ node_modules/gulp-commonjs-tasks && cd .."
+    "test": "mocha ./test/**/*.spec.js"
   },
   "engines": {
     "node": "0.10.x"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sytac/gulp-commonjs-tasks.git"
+    "url": "https://github.com/sytac/gulp-cjs-tasks.git"
   },
   "keywords": [
     "gulp",
