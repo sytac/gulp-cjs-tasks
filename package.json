@@ -27,17 +27,17 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "cli-tree": "0.0.1",
-    "eslint": "^0.24.1",
+    "eslint": "^1.10.3",
     "expect.js": "^0.3.1",
     "gulp-template": "^3.0.0",
-    "istanbul": "^0.3.13",
+    "istanbul": "^0.4.1",
     "mocha": "^2.2.4",
     "sinon": "^1.14.1"
   },
   "dependencies": {
     "gulp": "^3.8.11",
     "gulp-util": "^3.0.4",
-    "js-object-pretty-print": "^0.1.4",
+    "js-object-pretty-print": "^0.2.0",
     "lodash": "^3.6.0",
     "run-sequence": "^1.0.2"
   }
