@@ -27,7 +27,7 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "cli-tree": "0.0.1",
-    "eslint": "^0.24.1",
+    "eslint": "^3.2.1",
     "expect.js": "^0.3.1",
     "gulp-template": "^3.0.0",
     "istanbul": "^0.3.13",
